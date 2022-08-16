@@ -14,20 +14,20 @@
 // 用来检查字符串中是否含有a
 // 大小写忽略
 var regex1 = new RegExp("a","i");
-console.log(regex1.test("ABCDEFG"));
+console.log(regex1.test("ABCDEFG"));    // T
 // 区分大小写
 var regex11 = new RegExp("a","");
-console.log(regex11.test("ABCDEFG"));
+console.log(regex11.test("ABCDEFG"));   // F
 
 
 // 2. 使用字面量创建一个正则表达式  ——————即使用var regex = /正则表达式/匹配模式
 // 用来检查字符串中是否含有abc
 // 大小写忽略
 var regex2 = /abc/i ;
-console.log(regex2.test("ABCDEFG"));
+console.log(regex2.test("ABCDEFG"));    // T
 // 区分大小写
 var regex22 = /abc/ ;
-console.log(regex22.test("ABCDEFG"));
+console.log(regex22.test("ABCDEFG"));   // F
 
 
 
